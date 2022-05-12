@@ -11,4 +11,5 @@ let height = 8;
 const area = base*height;
 console.log(area);
 let hip = base*base + height*height;
+hip = Math.sqrt(hip)
 console.log(hip);
