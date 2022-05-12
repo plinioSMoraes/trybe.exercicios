@@ -13,3 +13,5 @@ console.log(area);
 let hip = base*base + height*height;
 hip = Math.sqrt(hip)
 console.log(hip);
+let perimeterTriang = base + height + hip;
+console.log(perimeterTriang);
