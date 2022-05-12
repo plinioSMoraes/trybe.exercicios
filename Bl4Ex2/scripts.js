@@ -5,3 +5,6 @@ const patientInfo = {
   lastName: 'Santos',
 };
 const patientEmail = 'ana@email.com';
+
+const base = 5;
+let height = 8;
