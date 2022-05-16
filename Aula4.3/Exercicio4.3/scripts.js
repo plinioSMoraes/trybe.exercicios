@@ -95,4 +95,25 @@ function invertTriangleN(size){ // Exercicio 3
         console.log(arraySpace.join(""));
     }
 }
-invertTriangleN(10);
+//invertTriangleN(10);
+
+
+function piramidN(size){ // Exercicio 4
+    let midPoint = Math.ceil(size/2); // o topo da piramide, tambem diz a altura da piramide
+    let startPoint = midPoint; // primeira posicao dos asteriscos
+    let endPoint = midPoint; // ultima posicao dos asteriscos
+    let arraySpace = []; // cria um array vazio
+    for(let index = size; index>0; index -= 1){ // adiciona a quantidade de espaços delimitada pelo size ao array
+        arraySpace.push(" ");
+    }
+    for(let index = 0; index < midPoint; index += 1){ //Percorre a altura da piramide
+        for(let index2 = startPoint; index2 <= endPoint; index2 +=1){ // preenche do meio para fora a piramide, começando do top
+            arraySpace[index2] = "*";           //e vai diminuindo o startpoint e aumentaodo o endpoint
+        }
+        console.log(arraySpace.join("")); // printa a linha da piramide
+        startPoint -= 1;
+        endPoint += 1;
+    }
+
+}
+// piramidN(9); // chama a funcao
