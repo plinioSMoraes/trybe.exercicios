@@ -41,3 +41,18 @@ function maiorValorArray(numbers){ // funcao maior valor no array - Exercicio 4
     console.log(biggestNumber); // printa o resultado
 }
 //maiorValorArray(numbers); // chama a funcao
+
+function quantosImparesArray(numbers){
+    let quantImpares = 0;
+    for(let index = 0; index < numbers.length; index+=1){ //percore o array
+        if(numbers[index]%2 != 0){ // se o resto é zero, entao o numero e par, senao e impar
+            quantImpares += 1; //soma mais um se for impar
+        }
+    }
+    if(quantImpares > 0){ //se a quant de impares for 0, printa nenhum valor encontrado senao printa a quant
+        console.log(quantImpares);
+    }else{
+        console.log("Nenhum valor ímpar encontrado.");
+    }
+}
+//quantosImparesArray(numbers); // chama funcao
