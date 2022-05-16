@@ -31,3 +31,13 @@ function mediaArray(numbers){ //funcao que retorna a media de um array - Exercic
 }
 //mediaArray(numbers); // chama a funcao
 
+function maiorValorArray(numbers){ // funcao maior valor no array - Exercicio 4
+    let biggestNumber = 0; // variavel que contem o maior numero
+    for(let index = 0; index < numbers.length; index+=1){ //percore o array
+        if(biggestNumber < numbers[index]){ // verifica qual numero e maior
+            biggestNumber = numbers[index]; // armazena o maior numero na variavel
+        }
+    }
+    console.log(biggestNumber); // printa o resultado
+}
+//maiorValorArray(numbers); // chama a funcao
