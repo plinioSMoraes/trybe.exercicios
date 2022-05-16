@@ -23,5 +23,11 @@ function mediaArray(numbers){ //funcao que retorna a media de um array - Exercic
     }
     mediaArray /= numbers.length ; // diviide a soma de todos itens do array pelo tamanho do array
     console.log(mediaArray); // printa o resultado na variavel mediaArray
+    if(mediaArray>20){
+        console.log("Media é maior que 20.");
+    }else{
+        console.log("Média é menor ou igual a 20.");
+    }
 }
 //mediaArray(numbers); // chama a funcao
+
