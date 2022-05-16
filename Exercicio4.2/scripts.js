@@ -58,7 +58,7 @@ function quantosImparesArray(numbers){
 //quantosImparesArray(numbers); // chama funcao
 
 function menorValorArray(numbers){
-    let menorValor = 9999999999; // se eu usar 0, o menor valor vai ser 0, usar valor grande
+    let menorValor = 9999999999; // se eu usar 0, o menor valor vai ser 0, usar valor grande - Exercicio 7
     for(let index = 0; index < numbers.length; index+= 1){ // percorre array
         if(menorValor > numbers[index]){ // se maior troca o valor pelo menor
             menorValor = numbers[index];
@@ -67,3 +67,16 @@ function menorValorArray(numbers){
     console.log(menorValor); // printa o resultado
 }
 //menorValorArray(numbers); // chama a funcao
+
+let numbersTo25 = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27,
+    5, 9, 3, 19, 70, 8, 100, 2, 35, 27,5, 9, 3, 19, 70]; // Exercicio 8
+
+//console.log(numbersTo25); // Exercicio 8
+
+function divideBy2(numbersTo25){ // Exercicio 9
+    for(let index =0; index < numbersTo25.length; index+= 1){ // percorre o array
+        numbersTo25[index] /= 2;  // divide cada posicao por 2
+    }
+    console.log(numbersTo25); // printa o novo array divido por 2
+}
+//divideBy2(numbersTo25); // chama a funcao
