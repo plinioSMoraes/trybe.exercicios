@@ -61,4 +61,25 @@ function maiorPrimo(number){ // retorna o maior numero primo dos antecessores de
     }
     console.log(maiorPrimo); // retorna o maior primo entre os antecessores do numero ou ele mesmo
 }
-maiorPrimo(10000); // chama a funcao
+// maiorPrimo(10000); // chama a funcao
+
+// Exercicios Bonus
+
+function squareN(size){ // Exercicio 1
+    let word = ""; // guarda *
+    for(let index = 0; index < size; index += 1){
+        word = word + "*"; // concatena * ate ficar em "*****"
+    }
+    for(let index = 0; index < size; index += 1){
+        console.log(word); // printa "*****" 5 vezes 
+    }
+}
+//squareN(5);
+function triangleN(size){
+    let word = ""; // guarda *
+    for(let index = 0; index < size; index += 1){
+        word = word + "*"; 
+        console.log(word);
+    }
+}
+triangleN(5);
