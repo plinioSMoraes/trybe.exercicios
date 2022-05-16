@@ -75,9 +75,10 @@ function squareN(size){ // Exercicio 1
     }
 }
 //squareN(5);
-function triangleN(size){
+
+function triangleN(size){ // Exercicio 2
     let word = ""; // guarda *
-    for(let index = 0; index < size; index += 1){
+    for(let index = 0; index < size; index += 1){ //vai printando enquando concatena, formando um triangulo
         word = word + "*"; 
         console.log(word);
     }
