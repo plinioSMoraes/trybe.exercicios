@@ -44,7 +44,7 @@ function maiorValorArray(numbers){ // funcao maior valor no array - Exercicio 4
 
 function quantosImparesArray(numbers){
     let quantImpares = 0;
-    for(let index = 0; index < numbers.length; index+=1){ //percore o array
+    for(let index = 0; index < numbers.length; index++){ //percore o array
         if(numbers[index]%2 != 0){ // se o resto é zero, entao o numero e par, senao e impar
             quantImpares += 1; //soma mais um se for impar
         }
@@ -56,3 +56,14 @@ function quantosImparesArray(numbers){
     }
 }
 //quantosImparesArray(numbers); // chama funcao
+
+function menorValorArray(numbers){
+    let menorValor = 9999999999; // se eu usar 0, o menor valor vai ser 0, usar valor grande
+    for(let index = 0; index < numbers.length; index+= 1){ // percorre array
+        if(menorValor > numbers[index]){ // se maior troca o valor pelo menor
+            menorValor = numbers[index];
+        }
+    }
+    console.log(menorValor); // printa o resultado
+}
+//menorValorArray(numbers); // chama a funcao
