@@ -15,3 +15,13 @@ function somaArray(numbers){ // funcao soma itens do array - Exercicio 2
     console.log(resultadoSoma); // printa o resultado da soma de todos itens do array
 }
 //somaArray(numbers); // chama a funcao
+
+function mediaArray(numbers){ //funcao que retorna a media de um array - Exercicio 3
+    let mediaArray = 0; // variavel media
+    for(let index =0; index<numbers.length; index += 1 ){ // percorre o array
+        mediaArray += numbers[index]; // soma os itens do array
+    }
+    mediaArray /= numbers.length ; // diviide a soma de todos itens do array pelo tamanho do array
+    console.log(mediaArray); // printa o resultado na variavel mediaArray
+}
+//mediaArray(numbers); // chama a funcao
