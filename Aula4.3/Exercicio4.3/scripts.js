@@ -83,4 +83,16 @@ function triangleN(size){ // Exercicio 2
         console.log(word);
     }
 }
-triangleN(5);
+//triangleN(5);
+
+function invertTriangleN(size){ // Exercicio 3
+    let arraySpace = []; // cria um array vazio
+    for(let index = size; index>0; index -= 1){ // adiciona a quantidade de espaços delimitada pelo size ao array
+        arraySpace.push(" ");
+    }
+    for(let index = arraySpace.length -1; index >=0; index -= 1){ // adiciona asteriscos de traz pra frente e printa entre loops
+        arraySpace[index] = "*";
+        console.log(arraySpace.join(""));
+    }
+}
+invertTriangleN(10);
