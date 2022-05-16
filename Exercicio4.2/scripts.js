@@ -80,3 +80,33 @@ function divideBy2(numbersTo25){ // Exercicio 9
     console.log(numbersTo25); // printa o novo array divido por 2
 }
 //divideBy2(numbersTo25); // chama a funcao
+
+numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+function ordenaCrsArray(numbers){ // Ordena Crescente Array - Exercicio Bonus 1
+    for(let index = 1; index < numbers.length; index += 1){ //percorre o array
+        for(let index2 = 0; index2 < index; index2 += 1){ // percorre o array até onde o index está
+            if(numbers[index2] > numbers[index]){ // se a pos do index(que esta a frente) é menor, troca e passa pra tras
+                let swap = numbers[index];        // senao mantem e incrementar o index2 que está atras
+                numbers[index] = numbers[index2];
+                numbers[index2] = swap;
+            }
+        }
+    }
+    console.log(numbers); // printa o array ordenado
+}
+//ordenaCrsArray(numbers); // chama a funcao ordena array
+
+function ordenaDrsArray(numbers){ // Ordena Decrescente Array - Exercicio Bonus 2
+    for(let index = 1; index < numbers.length; index += 1){ //percorre o array
+        for(let index2 = 0; index2 < index; index2 += 1){ // percorre o array até onde o index está
+            if(numbers[index2] < numbers[index]){ // se a pos do index(que esta a frente) é menor, troca e passa pra tras
+                let swap = numbers[index];        // senao mantem e incrementar o index2 que está atras
+                numbers[index] = numbers[index2];
+                numbers[index2] = swap;
+            }
+        }
+    }
+    console.log(numbers); // printa o array ordenado
+}
+ordenaDrsArray(numbers); // chama a funcao ordena array
