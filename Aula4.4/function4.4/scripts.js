@@ -1,3 +1,5 @@
+// Functions Bloco 4.4
+// Exemplo 4.4.1 
 function isPalindrome(string){
     let upSideString = []; // array onde cada caractere da string sera armazenado
     let newString; // variavel onde a palavra escrita ao contrario sera armazenado
@@ -11,4 +13,17 @@ function isPalindrome(string){
         return false; // se diferentes nao sao palindromos
     }
 }
-console.log(isPalindrome("anana")); // chama a funcao
+//console.log(isPalindrome("anana")); // chama a funcao
+
+// Exemplo 4.4.2
+let numbers = [2, 3, 6, 11, 10, 12]; // array de teste
+function biggerValue(numArray){ // funcao que retorna o indice do maior numero do array
+    let indexBiggestNum; // armazena o indice do maior numero do array
+    for(let index = 1 ; index < numArray.length; index += 1){ // percorre o array
+        if(numArray[index] > numArray[index-1]){ // se o numero no indice e maior que o numero no 
+            indexBiggestNum = index; // indice anterior, armazena o indice
+        }
+    }
+    return indexBiggestNum; // retorna o indice do maior numero
+}
+console.log(biggerValue(numbers)); // chama a funcao
