@@ -116,7 +116,7 @@ function piramidN(size){ // Exercicio 4
 }
 // piramidN(9); // chama a funcao
 
-function emptyPiramidN(size){
+function emptyPiramidN(size){ // Exercicio 5
     let midPoint = Math.ceil(size/2); // o topo da piramide, tambem diz a altura da piramide
     let startPoint = midPoint; // primeira posicao dos asteriscos
     let endPoint = midPoint; // ultima posicao dos asteriscos
@@ -139,4 +139,4 @@ function emptyPiramidN(size){
         endPoint += 1;
     }
 }
-emptyPiramidN(5);
+//emptyPiramidN(9);
