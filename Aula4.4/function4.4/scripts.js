@@ -16,7 +16,7 @@ function isPalindrome(string){
 //console.log(isPalindrome("anana")); // chama a funcao
 
 // Exemplo 4.4.2
-let numbers = [2, 3, 6, 11, 10, 12]; // array de teste
+let numbers = [5, 3, 15, 11, 1, 12]; // array de teste
 function biggerValue(numArray){ // funcao que retorna o indice do maior numero do array
     let indexBiggestNum; // armazena o indice do maior numero do array
     for(let index = 1 ; index < numArray.length; index += 1){ // percorre o array
@@ -26,4 +26,18 @@ function biggerValue(numArray){ // funcao que retorna o indice do maior numero d
     }
     return indexBiggestNum; // retorna o indice do maior numero
 }
-console.log(biggerValue(numbers)); // chama a funcao
+//console.log(biggerValue(numbers)); // chama a funcao
+
+// Exercicio 4.4.3 
+function smallestNumber(numbers){ // retorna o indice do menor numero
+    let smallestIndex = 0; // inicia a variavel que armazena o menor indice
+    let smallestNum = 999999999999999; // um numero grande pra nao atrapalhar o teste
+    for(let index = 0; index < numbers.length -1 ; index += 1){ // percorre o array
+        if(smallestNum > numbers[index]){ //ve qual e menor
+            smallestIndex = index; // armazena o indice do menor
+            smallestNum = numbers[index]; // armazena o valor do menor
+        }
+    }
+    return smallestIndex; //retorna o indice do menor numero
+}
+console.log(smallestNumber(numbers)); // chama a funcao
